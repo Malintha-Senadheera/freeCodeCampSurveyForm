@@ -6,5 +6,52 @@
     <title>freeCodeCamp</title>
 </head>
 <body>
+    <div id="container">
+        <header class="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking time to complete this Survey.</p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-inti">
+                <label for="name" id="name-label">Name:
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                </label>
+            </div>
+            <div class="form-init">
+                <label for="email" id="email-label">Emali:
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                </label>
+            </div>
+            <div class="form-init">
+                <label for="number" id="number-label">Age 
+                    <span class="optional">(optional)</span>
+                    <input type="number" name="number" id="number" placeholder="Age" min="13" max="120">
+                </label>
+            </div>
+            <div class="form-init">
+                <label for="dropdown" id="dropdown-label">Are you satisfying about freeCodeCamp?
+                    <select name="dropdown" id="dropdown">
+                        <option value="Yes" selected>
+                            Yes
+                        </option>
+                        <option value="No">
+                            No
+                        </option>
+                        <option value="Not sure">
+                            Not sure
+                        </option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-init">
+                <label for="comments" id="comments-label">Any comments or suggestions?
+                    <textarea name="comments" id="comments" placeholder="Enter your comments here..."></textarea>
+                </label>
+            </div>
+            <div class="form-init">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
